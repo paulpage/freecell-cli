@@ -1,6 +1,4 @@
 from asciimatics.screen import Screen
-from random import shuffle
-from math import floor
 
 from cards import *
 
@@ -84,8 +82,7 @@ def display(screen):
 
         print_horizontal_divider(screen, 2)
 
-
-        for row in range(1,20):
+        for row in range(1, 20):
             for col in range(8):
                 print_card(screen, matrix.card_at(row, col), row + 2, col * 4)
                 print_divider(screen, row + 2, col * 4)
